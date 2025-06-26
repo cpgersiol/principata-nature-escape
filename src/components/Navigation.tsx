@@ -87,7 +87,7 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="px-6 pt-3">
+            <div className="px-6 pt-3 border-t border-gray-100 mt-2">
               <Link
                 to="/contact"
                 className="block w-full text-center bg-forest-600 text-white py-3 rounded-full hover:bg-forest-700 transition-colors duration-200 font-medium"
