@@ -1,5 +1,5 @@
 
-import { MapPin, Instagram } from 'lucide-react';
+import { MapPin, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -25,6 +25,13 @@ const Footer = () => {
                 aria-label="Instagram"
               >
                 <Instagram size={24} />
+              </a>
+              <a 
+                href="#" 
+                className="text-forest-200 hover:text-white transition-colors duration-200"
+                aria-label="Facebook"
+              >
+                <Facebook size={24} />
               </a>
             </div>
           </div>
