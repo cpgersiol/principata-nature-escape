@@ -141,21 +141,26 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Filter Buttons */}
-      <section className="py-16 bg-white sticky top-20 z-40 shadow-sm">
+      {/* Filter Buttons - Mobile Optimized */}
+      <section className="py-8 md:py-16 bg-white sticky top-20 z-40 shadow-sm">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4">
             {categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
+                className={`px-3 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 transform hover:scale-105 ${
                   selectedCategory === category.id
                     ? 'bg-forest-600 text-white shadow-lg'
                     : 'bg-sage-100 text-forest-700 hover:bg-sage-200'
                 }`}
               >
-                {category.name}
+                <span className="hidden sm:inline">{category.name}</span>
+                <span className="sm:hidden">
+                  {category.name === 'All Photos' ? 'All' : 
+                   category.name === 'Accommodation' ? 'Rooms' : 
+                   category.name}
+                </span>
               </button>
             ))}
           </div>
