@@ -1,5 +1,5 @@
 
-import { Tent, ParkingMeter, Adult, Baby, Shower, Laundry, Umbrella, Bbq } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -36,7 +36,7 @@ const Pricing = () => {
 
   const guestPrices = [
     {
-      icon: Adult,
+      icon: User,
       title: 'Adult',
       price: '€5',
       period: 'per night',
@@ -67,21 +67,21 @@ const Pricing = () => {
 
   const servicePrices = [
     {
-      icon: Shower,
+      icon: Droplets,
       title: 'Electricity',
       price: '€3',
       period: 'per day',
       description: 'Power hookup for your camping needs'
     },
     {
-      icon: Shower,
+      icon: Droplets,
       title: 'Hot Showers',
       price: '€2',
       period: 'per use',
       description: 'Clean, hot shower facilities'
     },
     {
-      icon: Laundry,
+      icon: Shirt,
       title: 'Laundry Service',
       price: '€3',
       period: 'per load',
@@ -98,7 +98,7 @@ const Pricing = () => {
       description: '2 comfortable sun loungers with beach umbrella'
     },
     {
-      icon: Bbq,
+      icon: Flame,
       title: 'BBQ + Table',
       price: '€10',
       period: 'per day',

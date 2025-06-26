@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { ArrowRight, Wifi, Adult, Baby, Tent } from 'lucide-react';
+import { ArrowRight, Wifi, User, Baby, Tent } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
 
   const features = [
     {
-      icon: Adult,
+      icon: User,
       title: 'Family Friendly',
       description: 'Perfect for families with children of all ages'
     },
