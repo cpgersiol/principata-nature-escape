@@ -1,9 +1,9 @@
 
-import { MapPin, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Instagram, Facebook, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-forest-800 text-white py-12">
+    <footer className="bg-forest-800 text-white py-12 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -20,14 +20,18 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://www.instagram.com/camping_principata?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-forest-200 hover:text-white transition-colors duration-200"
                 aria-label="Instagram"
               >
                 <Instagram size={24} />
               </a>
               <a 
-                href="#" 
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer" 
                 className="text-forest-200 hover:text-white transition-colors duration-200"
                 aria-label="Facebook"
               >
@@ -59,9 +63,27 @@ const Footer = () => {
                   <p className="text-forest-200">3.8KM from the Cathedral, main ex</p>
                 </div>
               </div>
-              <div>
-                <p className="text-forest-200">Email: campingprincipata@gmail.com</p>
-                <p className="text-forest-200">Phone: +355 68 320 4350</p>
+              <div className="md:space-y-2">
+                {/* Email - centered on mobile */}
+                <div className="flex items-center space-x-2 md:justify-start justify-center md:text-left text-center">
+                  <Mail size={18} className="text-forest-400 flex-shrink-0 md:block hidden" />
+                  <a 
+                    href="mailto:campingprincipata@gmail.com"
+                    className="text-forest-200 hover:text-white transition-colors duration-200"
+                  >
+                    campingprincipata@gmail.com
+                  </a>
+                </div>
+                {/* Phone - centered on mobile and clickable */}
+                <div className="flex items-center space-x-2 md:justify-start justify-center md:text-left text-center">
+                  <Phone size={18} className="text-forest-400 flex-shrink-0 md:block hidden" />
+                  <a 
+                    href="tel:+355683204350"
+                    className="text-forest-200 hover:text-white transition-colors duration-200"
+                  >
+                    +355 68 320 4350
+                  </a>
+                </div>
               </div>
             </div>
           </div>
