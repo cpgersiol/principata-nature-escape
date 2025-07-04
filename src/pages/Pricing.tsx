@@ -1,5 +1,4 @@
-
-import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Boat, Caravan } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -123,7 +122,7 @@ const Pricing = () => {
       popular: true
     },
     {
-      icon: Boat,
+      icon: Ship,
       title: 'Boat (2-Person)',
       price: '€50',
       period: 'per night',
@@ -168,21 +167,21 @@ const Pricing = () => {
       description: 'Day access to our beautiful beach area'
     },
     {
-      icon: Boat,
+      icon: Ship,
       title: 'Rowboat rental',
       price: '€10',
       period: 'per hour',
       description: 'Peaceful rowboat for lake exploration'
     },
     {
-      icon: Boat,
+      icon: Ship,
       title: 'Speedboat (Max 2 persons)',
       price: '€30',
       period: 'per hour',
       description: 'Exciting speedboat with driver included'
     },
     {
-      icon: Boat,
+      icon: Ship,
       title: 'Mini Yacht (Max 8 persons)',
       price: '€60',
       period: 'per hour',
@@ -196,7 +195,7 @@ const Pricing = () => {
       description: 'Max 6 persons - Contact for pricing'
     },
     {
-      icon: Boat,
+      icon: Ship,
       title: 'Boat Ramp',
       price: '€10',
       period: 'per use',
