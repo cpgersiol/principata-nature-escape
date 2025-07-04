@@ -1,5 +1,5 @@
 
-import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Boat, Caravan } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -65,6 +65,79 @@ const Pricing = () => {
     }
   ];
 
+  const extraAccommodationPrices = [
+    {
+      icon: Tent,
+      title: 'Tent for 2 Persons',
+      price: '€30',
+      period: 'per night',
+      description: 'Comfortable tent rental for couples',
+      features: [
+        'Fully equipped tent',
+        'Free access to all camping facilities',
+        'Bedding included',
+        'Weather-resistant'
+      ],
+      popular: false
+    },
+    {
+      icon: Tent,
+      title: 'Tent for 4 Persons',
+      price: '€40',
+      period: 'per night',
+      description: 'Spacious family tent rental',
+      features: [
+        'Large family tent',
+        'Free access to all camping facilities',
+        'Bedding for 4 included',
+        'Extra space for comfort'
+      ],
+      popular: false
+    },
+    {
+      icon: Caravan,
+      title: 'Caravan (2-Person)',
+      price: '€40',
+      period: 'per night',
+      description: 'Cozy caravan for two guests',
+      features: [
+        'Private caravan',
+        'Free access to all camping facilities',
+        'Basic kitchenette',
+        'Comfortable sleeping area'
+      ],
+      popular: false
+    },
+    {
+      icon: Caravan,
+      title: 'Caravan (5-Person)',
+      price: '€50',
+      period: 'per night',
+      description: 'Large caravan for families',
+      features: [
+        'Spacious family caravan',
+        'Free access to all camping facilities',
+        'Full kitchenette',
+        'Multiple sleeping areas'
+      ],
+      popular: true
+    },
+    {
+      icon: Boat,
+      title: 'Boat (2-Person)',
+      price: '€50',
+      period: 'per night',
+      description: 'Unique boat camping experience',
+      features: [
+        'Boat accommodation',
+        'Free access to all camping facilities',
+        'Waterfront location',
+        'Unique camping experience'
+      ],
+      popular: false
+    }
+  ];
+
   const servicePrices = [
     {
       icon: Droplets,
@@ -86,6 +159,48 @@ const Pricing = () => {
       price: '€3',
       period: 'per load',
       description: 'Washing machine access'
+    },
+    {
+      icon: User,
+      title: 'Day access to the beach',
+      price: '€2',
+      period: 'per person',
+      description: 'Day access to our beautiful beach area'
+    },
+    {
+      icon: Boat,
+      title: 'Rowboat rental',
+      price: '€10',
+      period: 'per hour',
+      description: 'Peaceful rowboat for lake exploration'
+    },
+    {
+      icon: Boat,
+      title: 'Speedboat (Max 2 persons)',
+      price: '€30',
+      period: 'per hour',
+      description: 'Exciting speedboat with driver included'
+    },
+    {
+      icon: Boat,
+      title: 'Mini Yacht (Max 8 persons)',
+      price: '€60',
+      period: 'per hour',
+      description: 'Luxury mini yacht with driver included'
+    },
+    {
+      icon: ParkingMeter,
+      title: '4x4 Off-road Vehicle Rental',
+      price: 'Contact us',
+      period: 'per day',
+      description: 'Max 6 persons - Contact for pricing'
+    },
+    {
+      icon: Boat,
+      title: 'Boat Ramp',
+      price: '€10',
+      period: 'per use',
+      description: 'Launch your boat in the lake'
     }
   ];
 
@@ -147,8 +262,10 @@ const Pricing = () => {
           </div>
         )}
 
-        <Link
-          to="/contact"
+        <a
+          href="https://wa.me/355683204350"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`w-full text-center py-3 px-6 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 block ${
             item.popular
               ? 'bg-forest-600 text-white hover:bg-forest-700'
@@ -156,7 +273,7 @@ const Pricing = () => {
           }`}
         >
           Book Now
-        </Link>
+        </a>
       </div>
     </div>
   );
@@ -248,11 +365,38 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Services & Equipment */}
+      {/* Extra Accommodation Options */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-forest-808 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-800 mb-4">
+              Extra Accommodation Options
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Complete rental options including tents, caravans, and unique boat camping experiences
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {extraAccommodationPrices.map((item, index) => (
+              <PriceCard key={index} item={item} delay={index * 0.2} />
+            ))}
+          </div>
+
+          <div className="mt-12 p-6 bg-forest-50 rounded-xl border-l-4 border-forest-500 max-w-4xl mx-auto">
+            <h4 className="font-semibold text-forest-700 mb-2">Important Note</h4>
+            <p className="text-forest-600">
+              All Extra Accommodation options include free access to all camping facilities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services & Equipment */}
+      <section className="py-20 bg-sage-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-800 mb-4">
               Additional Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -282,6 +426,79 @@ const Pricing = () => {
                 {equipmentPrices.map((item, index) => (
                   <ServiceCard key={index} item={item} delay={index * 0.1} />
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Guide to Shala River */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-800 mb-4">
+              🌄 Guide to Shala River
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              From Camping Principata to Shala River
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-sage-50 rounded-2xl p-8 mb-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-6">Description</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                To reach Shala River from our campsite, follow this route:
+              </p>
+              <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
+                <li>Take a boat from Vau Dejes Lake to Komani Lake</li>
+                <li>Drive to the shore of Komani Lake</li>
+                <li>Take a second boat from Komani Lake to Shala River</li>
+              </ol>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Options</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-forest-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-forest-700 mb-3">Regular Ticket</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Vau Dejes to Shala River (07:00AM-18:00PM)
+                  </p>
+                  <div className="text-2xl font-bold text-forest-600 mb-4">€50 per person</div>
+                  <a
+                    href="https://wa.me/355683204350"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-forest-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-forest-700 transition-colors duration-200 text-center block"
+                  >
+                    Book via WhatsApp
+                  </a>
+                </div>
+
+                <div className="bg-earth-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-earth-700 mb-3">Private Taxi Boat</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Maximum 8 persons
+                  </p>
+                  <div className="text-2xl font-bold text-earth-600 mb-4">€400 total</div>
+                  <a
+                    href="https://wa.me/355683204350"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-earth-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-earth-700 transition-colors duration-200 text-center block"
+                  >
+                    Book via WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-8 p-6 bg-sage-50 rounded-xl border-l-4 border-sage-500">
+                <h4 className="font-semibold text-sage-700 mb-2">Custom Travel Arrangements</h4>
+                <p className="text-sage-600 text-sm">
+                  Contact the team on-site for availability and pricing of custom travel arrangements.
+                </p>
               </div>
             </div>
           </div>
@@ -341,13 +558,15 @@ const Pricing = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Contact us today to reserve your spot and start planning your perfect camping adventure.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/355683204350"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center bg-earth-500 hover:bg-earth-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 animate-scale-in"
             style={{ animationDelay: '0.4s' }}
           >
             Book Now
-          </Link>
+          </a>
         </div>
       </section>
     </div>

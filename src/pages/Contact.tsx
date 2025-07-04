@@ -39,17 +39,17 @@ const ContactPage = () => {
   const contactInfo = [
     {
       title: 'Address',
-      details: ['123 Nature Lane', 'Lakeside, Italy 12345'],
+      details: ['Vau i Dejes - Koman Road', '3.8KM from the Cathedral, main ex'],
       icon: '📍'
     },
     {
       title: 'Phone',
-      details: ['+39 123 456 7890'],
+      details: ['+355 68 320 4350'],
       icon: '📞'
     },
     {
       title: 'Email',
-      details: ['info@campingprincipata.com'],
+      details: ['campingprincipata@gmail.com'],
       icon: '✉️'
     },
     {

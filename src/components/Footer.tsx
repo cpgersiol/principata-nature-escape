@@ -55,13 +55,13 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin size={18} className="text-forest-400 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-forest-200">123 Nature Lane</p>
-                  <p className="text-forest-200">Lakeside, Italy 12345</p>
+                  <p className="text-forest-200">Vau i Dejes - Koman Road</p>
+                  <p className="text-forest-200">3.8KM from the Cathedral, main ex</p>
                 </div>
               </div>
               <div>
-                <p className="text-forest-200">Email: info@campingprincipata.com</p>
-                <p className="text-forest-200">Phone: +39 123 456 7890</p>
+                <p className="text-forest-200">Email: campingprincipata@gmail.com</p>
+                <p className="text-forest-200">Phone: +355 68 320 4350</p>
               </div>
             </div>
           </div>
