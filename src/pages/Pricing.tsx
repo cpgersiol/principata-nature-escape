@@ -1,4 +1,4 @@
-import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -324,6 +324,27 @@ const Pricing = () => {
         </div>
       </section>
 
+      {/* Payment Info Section */}
+      <section className="py-16 bg-sage-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg p-8 border border-sage-200">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+                <div className="flex items-center gap-3 text-2xl">
+                  <Banknote size={24} className="text-forest-600" />
+                  <CreditCard size={24} className="text-forest-600" />
+                  <span className="text-2xl">💶</span>
+                  <span className="text-2xl">🇦🇱</span>
+                </div>
+                <p className="text-lg text-forest-700 font-medium">
+                  Cash and card accepted. Payments can be made in Albanian Lek (ALL) or Euro (EUR).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Accommodation Pricing */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -444,49 +465,46 @@ const Pricing = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
+            {/* Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="River between mountains"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="River surrounded by rock formation"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+            </div>
+
             <div className="bg-sage-50 rounded-2xl p-8 mb-8">
               <h3 className="text-2xl font-bold text-forest-800 mb-6">Description</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                To reach Shala River from our campsite, follow this route:
+              <p className="text-gray-700 leading-relaxed text-lg">
+                To reach the Shala River from Camping Principata, the journey begins at 7:30 AM with a minibus ride to Komani Lake. Once there, you'll board a boat that takes you through the stunning scenery of the lake, eventually arriving at the Shala River around 10:30 AM. After enjoying your time there, the return trip begins at 2:30 PM, with the group expected back at the campsite by 6:00 PM, following the same route.
               </p>
-              <ol className="list-decimal list-inside space-y-2 text-gray-700 mb-6">
-                <li>Take a boat from Vau Dejes Lake to Komani Lake</li>
-                <li>Drive to the shore of Komani Lake</li>
-                <li>Take a second boat from Komani Lake to Shala River</li>
-              </ol>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Options</h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="max-w-md mx-auto">
                 <div className="bg-forest-50 rounded-xl p-6">
-                  <h4 className="font-semibold text-forest-700 mb-3">Regular Ticket</h4>
-                  <p className="text-sm text-gray-600 mb-3">
-                    Vau Dejes to Shala River (07:00AM-18:00PM)
-                  </p>
-                  <div className="text-2xl font-bold text-forest-600 mb-4">€50 per person</div>
-                  <a
-                    href="https://wa.me/355683204350"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-forest-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-forest-700 transition-colors duration-200 text-center block"
-                  >
-                    Book via WhatsApp
-                  </a>
-                </div>
-
-                <div className="bg-earth-50 rounded-xl p-6">
-                  <h4 className="font-semibold text-earth-700 mb-3">Private Taxi Boat</h4>
-                  <p className="text-sm text-gray-600 mb-3">
+                  <h4 className="font-semibold text-forest-700 mb-3 text-lg">Regular Ticket</h4>
+                  <p className="text-sm text-gray-600 mb-4">
                     Maximum 8 persons
                   </p>
-                  <div className="text-2xl font-bold text-earth-600 mb-4">€400 total</div>
+                  <div className="text-3xl font-bold text-forest-600 mb-6">€35 per person</div>
                   <a
                     href="https://wa.me/355683204350"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-earth-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-earth-700 transition-colors duration-200 text-center block"
+                    className="w-full bg-forest-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-forest-700 transition-colors duration-200 text-center block"
                   >
                     Book via WhatsApp
                   </a>
