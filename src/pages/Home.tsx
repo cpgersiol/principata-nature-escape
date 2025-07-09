@@ -167,7 +167,7 @@ const Home = () => {
                 />
                 <div className="absolute -bottom-3 -right-3 md:-bottom-6 md:-right-6 w-24 h-24 md:w-32 md:h-32 bg-earth-500 rounded-2xl flex items-center justify-center shadow-xl">
                   <div className="text-center text-white">
-                    <div className="text-xl md:text-2xl font-bold">10+</div>
+                    <div className="text-xl md:text-2xl font-bold">2+</div>
                     <div className="text-xs md:text-sm">Years</div>
                   </div>
                 </div>

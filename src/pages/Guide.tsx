@@ -63,14 +63,14 @@ const Guide = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg p-8">
+            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
               <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Options</h3>
               
               <div className="max-w-md mx-auto">
                 <div className="bg-forest-50 rounded-xl p-6">
                   <h4 className="font-semibold text-forest-700 mb-3 text-lg">Regular Ticket</h4>
                   <p className="text-sm text-gray-600 mb-4">
-                    Maximum 8 persons
+                    2 way trip
                   </p>
                   <div className="text-3xl font-bold text-forest-600 mb-6">€35 per person</div>
                   <a
@@ -83,12 +83,135 @@ const Guide = () => {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="mt-8 p-6 bg-sage-50 rounded-xl border-l-4 border-sage-500">
-                <h4 className="font-semibold text-sage-700 mb-2">Custom Travel Arrangements</h4>
-                <p className="text-sage-600 text-sm">
-                  Contact the team on-site for availability and pricing of custom travel arrangements.
-                </p>
+      {/* Guide to Fierza Reservoir */}
+      <section className="py-20 bg-sage-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-800 mb-4">
+              🌊 Guide to Fierza Reservoir
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              From Camping Principata to Fierza Reservoir
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {/* Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Reservoir surrounded by mountains"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Mountain lake reservoir"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="bg-sage-50 rounded-2xl p-8 mb-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-6">Description</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Your adventure to the Fierza Reservoir begins at 7:30 AM with a minibus ride from Camping Principata to Komani Lake.
+                Once there, you'll board a boat that travels across the lake to reach Fierza by 11:30 AM.
+                After exploring and relaxing by the reservoir, the return journey begins at 2:30 PM, arriving back at the campsite by 6:00 PM.
+                If you decide you'd like to stay in Fierza for a night or two, you can still use the same ticket for the return trip on a following day.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Options</h3>
+              
+              <div className="max-w-md mx-auto">
+                <div className="bg-forest-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-forest-700 mb-3 text-lg">Standard Ticket</h4>
+                  <p className="text-sm text-gray-600 mb-4">
+                    2 way trip
+                  </p>
+                  <div className="text-3xl font-bold text-forest-600 mb-6">€40 per person</div>
+                  <a
+                    href="https://wa.me/355683204350"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-forest-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-forest-700 transition-colors duration-200 text-center block"
+                  >
+                    Book via WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Guide to Valbona */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-forest-800 mb-4">
+              🏔️ Guide to Valbona
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              From Camping Principata to Valbona River
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {/* Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Mountain valley with river"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Alpine mountain landscape"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="bg-sage-50 rounded-2xl p-8 mb-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-6">Description</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Your journey to the beautiful Valbona River begins at 7:30 AM with a minibus ride from Camping Principata to Komani Lake. From there, you'll enjoy a scenic boat ride across the lake to Fierza, followed by a ferry trip through the mountain-lined route to Valbona, arriving around 1:00 PM.
+                Please note: Round trips to Valbona cannot be completed in one day.
+                If you decide you'd like to stay for a night or two, you can find accommodation there, and your return can be arranged separately. The ticket is valid for one way, and only the trip is provided by us.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Details</h3>
+              
+              <div className="max-w-md mx-auto">
+                <div className="bg-forest-50 rounded-xl p-6">
+                  <div className="text-3xl font-bold text-forest-600 mb-4">€30 per person (one way)</div>
+                  <p className="text-sm text-gray-600 mb-6">
+                    Only the trip is provided (no accommodation included)
+                  </p>
+                  <a
+                    href="https://wa.me/355683204350"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-forest-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-forest-700 transition-colors duration-200 text-center block"
+                  >
+                    Book via WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -126,6 +249,13 @@ const Guide = () => {
                   <li>• 6:00 PM - Back at campsite</li>
                 </ul>
               </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-sage-50 rounded-xl border-l-4 border-sage-500">
+              <h4 className="font-semibold text-sage-700 mb-2">Custom Travel Arrangements</h4>
+              <p className="text-sage-600 text-sm">
+                Contact the team on-site for availability and pricing of custom travel arrangements.
+              </p>
             </div>
 
             <div className="mt-8 p-6 bg-earth-50 rounded-xl border-l-4 border-earth-500">
