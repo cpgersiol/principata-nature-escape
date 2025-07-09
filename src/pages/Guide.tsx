@@ -63,6 +63,75 @@ const Guide = () => {
               </p>
             </div>
 
+            {/* Travel Information */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Information</h3>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Timetable */}
+                <div className="bg-forest-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-forest-700 mb-4 text-lg">📅 Daily Timetable</h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">7:30 AM</span>
+                      <span className="text-forest-700">Departure from Camping Principata</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">8:30 AM</span>
+                      <span className="text-forest-700">Arrive at Komani Lake</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">9:00 AM</span>
+                      <span className="text-forest-700">Board boat to Shala River</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">10:30 AM</span>
+                      <span className="text-forest-700">Arrive at Shala River</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">2:30 PM</span>
+                      <span className="text-forest-700">Return journey begins</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="text-gray-600">6:00 PM</span>
+                      <span className="text-forest-700">Back at campsite</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* What to Bring */}
+                <div className="bg-sage-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-sage-700 mb-4 text-lg">🎒 What to Bring</h4>
+                  <ul className="space-y-2 text-sm text-gray-600">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                      Comfortable walking shoes
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                      Sun protection (hat, sunscreen)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                      Camera for stunning photos
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                      Light jacket (weather changes)
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                      Water bottle & snacks
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                      Swimming gear (optional)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
               <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Options</h3>
               
@@ -127,6 +196,70 @@ const Guide = () => {
                 After exploring and relaxing by the reservoir, the return journey begins at 2:30 PM, arriving back at the campsite by 6:00 PM.
                 If you decide you'd like to stay in Fierza for a night or two, you can still use the same ticket for the return trip on a following day.
               </p>
+            </div>
+
+            {/* Travel Information */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Information</h3>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Timetable */}
+                <div className="bg-forest-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-forest-700 mb-4 text-lg">📅 Daily Timetable</h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">7:30 AM</span>
+                      <span className="text-forest-700">Departure from Camping Principata</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">8:30 AM</span>
+                      <span className="text-forest-700">Arrive at Komani Lake</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">9:00 AM</span>
+                      <span className="text-forest-700">Board boat to Fierza</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">11:30 AM</span>
+                      <span className="text-forest-700">Arrive at Fierza Reservoir</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">2:30 PM</span>
+                      <span className="text-forest-700">Return journey begins</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="text-gray-600">6:00 PM</span>
+                      <span className="text-forest-700">Back at campsite</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Extended Stay Options */}
+                <div className="bg-sage-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-sage-700 mb-4 text-lg">🏨 Extended Stay</h4>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <p className="text-sage-700 font-medium">Optional overnight stays available</p>
+                    <ul className="space-y-2">
+                      <li className="flex items-center">
+                        <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                        Local guesthouses in Fierza
+                      </li>
+                      <li className="flex items-center">
+                        <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                        Camping spots near reservoir
+                      </li>
+                      <li className="flex items-center">
+                        <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                        Return ticket valid for multiple days
+                      </li>
+                      <li className="flex items-center">
+                        <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                        Fishing and hiking opportunities
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -194,6 +327,90 @@ const Guide = () => {
               </p>
             </div>
 
+            {/* Travel Information */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Information</h3>
+              
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Timetable */}
+                <div className="bg-forest-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-forest-700 mb-4 text-lg">📅 One-Way Timetable</h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">7:30 AM</span>
+                      <span className="text-forest-700">Departure from Camping Principata</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">8:30 AM</span>
+                      <span className="text-forest-700">Arrive at Komani Lake</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">9:00 AM</span>
+                      <span className="text-forest-700">Board boat to Fierza</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">11:30 AM</span>
+                      <span className="text-forest-700">Arrive at Fierza</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-forest-200">
+                      <span className="text-gray-600">12:00 PM</span>
+                      <span className="text-forest-700">Board ferry to Valbona</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span className="text-gray-600">1:00 PM</span>
+                      <span className="text-forest-700">Arrive at Valbona</span>
+                    </div>
+                  </div>
+                  <div className="mt-4 p-3 bg-amber-50 rounded-lg border border-amber-200">
+                    <p className="text-xs text-amber-700">
+                      ⚠️ One-way trip only. Return arrangements separate.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Activities & Accommodation */}
+                <div className="bg-sage-50 rounded-xl p-6">
+                  <h4 className="font-semibold text-sage-700 mb-4 text-lg">🏔️ In Valbona</h4>
+                  <div className="space-y-4 text-sm text-gray-600">
+                    <div>
+                      <p className="text-sage-700 font-medium mb-2">Activities</p>
+                      <ul className="space-y-1">
+                        <li className="flex items-center">
+                          <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                          Hiking in Valbona National Park
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                          Mountain trekking to Theth
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                          Photography opportunities
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-sage-700 font-medium mb-2">Accommodation</p>
+                      <ul className="space-y-1">
+                        <li className="flex items-center">
+                          <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                          Local guesthouses
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                          Mountain lodges
+                        </li>
+                        <li className="flex items-center">
+                          <span className="w-2 h-2 bg-sage-500 rounded-full mr-3"></span>
+                          Camping areas
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">Travel Details</h3>
               
@@ -223,30 +440,29 @@ const Guide = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-forest-800 mb-8 text-center">
-              Travel Information
+              Additional Travel Information
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <h4 className="font-semibold text-forest-700 mb-4">What to Bring</h4>
+                <h4 className="font-semibold text-forest-700 mb-4">🌤️ Weather Considerations</h4>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Comfortable walking shoes</li>
-                  <li>• Sun protection (hat, sunscreen)</li>
-                  <li>• Camera for stunning photos</li>
-                  <li>• Light jacket (mountain weather changes)</li>
-                  <li>• Water bottle</li>
+                  <li>• Check weather forecast before departure</li>
+                  <li>• Mountain weather can change quickly</li>
+                  <li>• Trips may be cancelled due to severe weather</li>
+                  <li>• Rain gear recommended during wet season</li>
+                  <li>• Warm layers needed for early morning/evening</li>
                 </ul>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-md">
-                <h4 className="font-semibold text-forest-700 mb-4">Trip Schedule</h4>
+                <h4 className="font-semibold text-forest-700 mb-4">🚌 Transportation Details</h4>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• 7:30 AM - Departure from campsite</li>
-                  <li>• 8:30 AM - Arrive at Komani Lake</li>
-                  <li>• 9:00 AM - Board boat to Shala River</li>
-                  <li>• 10:30 AM - Arrive at Shala River</li>
-                  <li>• 2:30 PM - Return journey begins</li>
-                  <li>• 6:00 PM - Back at campsite</li>
+                  <li>• Comfortable minibus transport</li>
+                  <li>• Scenic boat rides on Komani Lake</li>
+                  <li>• Professional boat operators</li>
+                  <li>• Life jackets provided on boats</li>
+                  <li>• Maximum group size varies by destination</li>
                 </ul>
               </div>
             </div>
@@ -262,7 +478,7 @@ const Guide = () => {
               <h4 className="font-semibold text-earth-700 mb-2">Important Notes</h4>
               <p className="text-earth-600 text-sm">
                 Weather conditions may affect departure times. All guests will be notified of any schedule changes the evening before departure. 
-                The trip includes boat transportation on Komani Lake and guided access to Shala River. 
+                The trip includes boat transportation on Komani Lake and guided access to destinations. 
                 Food and beverages are not included but can be purchased at local vendors.
               </p>
             </div>
