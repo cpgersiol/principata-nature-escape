@@ -179,7 +179,7 @@ const About = () => {
               >
                 <div className={`font-bold text-earth-400 mb-2 ${
                   stat.isTextStat 
-                    ? 'text-2xl md:text-3xl' 
+                    ? 'text-xl md:text-2xl leading-tight' 
                     : 'text-4xl md:text-5xl'
                 }`}>
                   {stat.number}
