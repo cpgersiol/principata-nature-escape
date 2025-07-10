@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -7,10 +6,10 @@ const About = () => {
   const [visibleStats, setVisibleStats] = useState(false);
 
   const stats = [
-    { number: '10+', label: 'Years of Experience' },
+    { number: '2+', label: 'Years of Experience' },
     { number: '5000+', label: 'Happy Guests' },
     { number: '4.8', label: 'Average Rating' },
-    { number: '365', label: 'Days Open' }
+    { number: 'May to September', label: 'Season Open' }
   ];
 
   const timeline = [
