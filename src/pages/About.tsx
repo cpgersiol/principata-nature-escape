@@ -9,7 +9,7 @@ const About = () => {
     { number: '2+', label: 'Years of Experience' },
     { number: '5000+', label: 'Happy Guests' },
     { number: '4.8', label: 'Average Rating' },
-    { number: 'May to September', label: 'Season Open' }
+    { number: 'May to September', label: 'Season Open', isTextStat: true }
   ];
 
   const timeline = [
@@ -177,7 +177,11 @@ const About = () => {
                 }`}
                 style={{ transitionDelay: `${index * 0.2}s` }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-earth-400 mb-2">
+                <div className={`font-bold text-earth-400 mb-2 ${
+                  stat.isTextStat 
+                    ? 'text-2xl md:text-3xl' 
+                    : 'text-4xl md:text-5xl'
+                }`}>
                   {stat.number}
                 </div>
                 <div className="text-lg text-forest-200">
