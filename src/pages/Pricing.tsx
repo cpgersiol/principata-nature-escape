@@ -78,7 +78,8 @@ const Pricing = () => {
         'Bedding included',
         'Weather-resistant'
       ],
-      popular: false
+      popular: false,
+      images: ['img/tent2-1.jpg', 'img/tent2-2.jpg']
     },
     {
       icon: Tent,
@@ -92,7 +93,8 @@ const Pricing = () => {
         'Bedding for 4 included',
         'Extra space for comfort'
       ],
-      popular: false
+      popular: false,
+      images: ['img/tent4-1.jpg', 'img/tent4-2.jpg']
     },
     {
       icon: Caravan,
@@ -106,7 +108,8 @@ const Pricing = () => {
         'Basic kitchenette',
         'Comfortable sleeping area'
       ],
-      popular: false
+      popular: false,
+      images: ['img/caravan2-1.jpg', 'img/caravan2-2.jpg']
     },
     {
       icon: Caravan,
@@ -120,7 +123,8 @@ const Pricing = () => {
         'Full kitchenette',
         'Multiple sleeping areas'
       ],
-      popular: true
+      popular: true,
+      images: ['img/caravan5-1.jpg', 'img/caravan5-2.jpg']
     },
     {
       icon: Ship,
@@ -134,7 +138,8 @@ const Pricing = () => {
         'Waterfront location',
         'Unique camping experience'
       ],
-      popular: false
+      popular: false,
+      images: ['img/boat2-1.jpg', 'img/boat2-2.jpg']
     }
   ];
 
@@ -259,6 +264,22 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {item.images && (
+          <div className="mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {item.images.map((image, index) => (
+                <div key={index} className="aspect-[4/3] overflow-hidden rounded-lg">
+                  <img
+                    src={image}
+                    alt={`${item.title} - Image ${index + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         )}
 
