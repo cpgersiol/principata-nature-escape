@@ -1,4 +1,4 @@
-import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote, Plug, Sailboat, Triangle } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote, Plug, Sailboat, TriangleRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -200,7 +200,7 @@ const Pricing = () => {
       description: 'Max 6 persons - Contact for pricing'
     },
     {
-      icon: Triangle,
+      icon: TriangleRight,
       title: 'Boat Ramp',
       price: '€10',
       period: 'per use',
