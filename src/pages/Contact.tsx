@@ -137,23 +137,19 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             {/* Map Placeholder */}
             <div className="lg:col-span-2">
-              <a
-                href="https://maps.app.goo.gl/X4JUPR5LeuiSxxFt8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer"
-              >
-                <div className="bg-gray-200 rounded-2xl h-96 lg:h-[500px] flex items-center justify-center shadow-lg animate-scale-in hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-center text-gray-500">
-                    <MapPin size={64} className="mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
-                    <p className="text-sm">
-                      Click to open in Google Maps<br />
-                      GPS Coordinates: 45.4642° N, 9.1900° E
-                    </p>
-                  </div>
-                </div>
-              </a>
+              <div className="rounded-2xl overflow-hidden shadow-lg animate-scale-in">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3993209912587!2d19.661221899999994!3d42.0204782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351ffc8475776df%3A0x5b61dff108866a88!2sCamping%20Principata!5e1!3m2!1sen!2s!4v1752268214450!5m2!1sen!2s"
+                  width="100%"
+                  height="500"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Camping Principata Location"
+                  className="lg:h-[500px]"
+                />
+              </div>
             </div>
 
             {/* Directions */}
