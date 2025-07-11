@@ -285,7 +285,7 @@ const About = () => {
             <div className="animate-slide-in-right">
               <div className="rounded-2xl overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11976.7959687054!2d19.775712!3d42.136027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13529d7344ccff17%3A0x52e22b5e0dc82e0e!2sCamping%20Principata!5e0!3m2!1sen!2s!4v1720100000000!5m2!1sen!2s"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.3993209912587!2d19.661221899999994!3d42.0204782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1351ffc8475776df%3A0x5b61dff108866a88!2sCamping%20Principata!5e1!3m2!1sen!2s!4v1752268214450!5m2!1sen!2s"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
