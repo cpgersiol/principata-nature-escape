@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Map from '../components/Map';
 
 const About = () => {
   const [visibleStats, setVisibleStats] = useState(false);
@@ -277,26 +277,13 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-forest-600 hover:bg-forest-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
               >
-                Get Directions
+                Open in Google Maps
                 <ArrowRight className="ml-2" size={18} />
               </a>
             </div>
 
             <div className="animate-slide-in-right">
-              <a
-                href="https://maps.app.goo.gl/X4JUPR5LeuiSxxFt8"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cursor-pointer"
-              >
-                <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="text-center text-gray-500">
-                    <MapPin size={48} className="mx-auto mb-4" />
-                    <p className="text-lg">Interactive Map</p>
-                    <p className="text-sm">Click to open in Google Maps</p>
-                  </div>
-                </div>
-              </a>
+              <Map height="h-96" />
             </div>
           </div>
         </div>
