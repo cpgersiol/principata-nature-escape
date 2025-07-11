@@ -1,4 +1,4 @@
-import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Zap, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -144,7 +144,7 @@ const Pricing = () => {
 
   const servicePrices = [
     {
-      icon: Droplets,
+      icon: Zap,
       title: 'Electricity',
       price: '€3',
       period: 'per day',
