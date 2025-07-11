@@ -70,7 +70,7 @@ const Pricing = () => {
       title: 'Tent for 2 Persons',
       price: '€30',
       period: 'per night',
-      description: 'Comfortable tent rental for couples',
+      description: 'Comfortable tent rental',
       features: [
         'Fully equipped tent',
         'Free access to all camping facilities',
