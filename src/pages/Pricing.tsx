@@ -1,4 +1,3 @@
-
 import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -7,12 +6,12 @@ const Pricing = () => {
     {
       icon: Tent,
       title: 'Tent Space',
-      price: '€15',
+      price: '€5',
       period: 'per night',
       description: 'Spacious camping spot for your tent with easy access to facilities',
       features: [
         'Level ground with drainage',
-        'Close to restroom facilities',
+        'Close to restroom facilities', 
         'Fire pit area nearby',
         'Picnic table included'
       ],
@@ -486,11 +485,10 @@ const Pricing = () => {
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h4 className="font-semibold text-forest-700 mb-4">Booking Policy</h4>
                 <ul className="space-y-2 text-gray-600 text-sm">
-                  <li>• Minimum stay: 1 night</li>
-                  <li>• Check-in: 3:00 PM - 8:00 PM</li>
-                  <li>• Check-out: 8:00 AM - 11:00 AM</li>
+                  <li>• Check-in: 07:00 AM - 11:59 PM</li>
+                  <li>• Check-out: 08:00 AM - 11:00 AM</li>
                   <li>• Advance booking recommended</li>
-                  <li>• Payment on arrival accepted</li>
+                  <li>• Payment on arrival only via Cash or Card</li>
                 </ul>
               </div>
 

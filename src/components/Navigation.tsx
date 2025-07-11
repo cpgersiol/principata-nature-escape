@@ -54,12 +54,14 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/355683204350"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-forest-600 text-white px-6 py-2 rounded-full hover:bg-forest-700 transition-colors duration-200 font-medium"
             >
               Book Now
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,13 +91,15 @@ const Navigation = () => {
               </Link>
             ))}
             <div className="px-6 pt-3 border-t border-gray-100 mt-2">
-              <Link
-                to="/contact"
+              <a
+                href="https://wa.me/355683204350"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-center bg-forest-600 text-white py-3 rounded-full hover:bg-forest-700 transition-colors duration-200 font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 Book Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>

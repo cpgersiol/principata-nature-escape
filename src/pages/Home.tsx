@@ -72,13 +72,15 @@ const Home = () => {
             Your Adventure Awaits at Camping Principata
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/355683204350"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-forest-600 hover:bg-forest-700 text-white px-6 sm:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
             >
               Book Now
               <ArrowRight className="ml-2" size={18} />
-            </Link>
+            </a>
             <Link
               to="/about"
               className="border-2 border-white text-white hover:bg-white hover:text-forest-800 px-6 sm:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105"
@@ -194,14 +196,16 @@ const Home = () => {
             Book your stay today and discover why thousands of guests choose 
             Camping Principata for their outdoor getaway.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/355683204350"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center bg-earth-500 hover:bg-earth-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105 animate-scale-in"
             style={{ animationDelay: '0.4s' }}
           >
             Book Your Stay Now
             <ArrowRight className="ml-2" size={18} />
-          </Link>
+          </a>
         </div>
       </section>
     </div>

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -14,22 +15,22 @@ const About = () => {
 
   const timeline = [
     {
-      year: '2014',
+      year: '2022',
       title: 'The Beginning',
       description: 'Camping Principata was founded with a simple vision: to provide a perfect nature escape for families and adventurers.'
     },
     {
-      year: '2017',
+      year: '2023',
       title: 'Facility Expansion',
       description: 'Added modern shower facilities, electrical hookups, and expanded the camping area to accommodate more guests.'
     },
     {
-      year: '2020',
+      year: '2024',
       title: 'Digital Transformation',
       description: 'Introduced WiFi throughout the grounds and online booking system for better guest experience.'
     },
     {
-      year: '2024',
+      year: '2025',
       title: 'Sustainability Focus',
       description: 'Launched eco-friendly initiatives including solar power and waste reduction programs.'
     }
@@ -241,7 +242,7 @@ const About = () => {
                 <MapPin className="text-forest-600 mt-1 flex-shrink-0" size={24} />
                 <div>
                   <p className="text-lg text-gray-700 mb-2">
-                    <strong>123 Nature Lane, Lakeside, Italy 12345</strong>
+                    <strong>Vau i Dejës - Koman Road, 3.8 KM from the Cathedral</strong>
                   </p>
                   <p className="text-gray-600 leading-relaxed">
                     Strategically located just 2 hours from the city center, our camping site 
@@ -264,30 +265,38 @@ const About = () => {
                 <div className="bg-sage-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-forest-700 mb-2">Transportation</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
-                    <li>• Free parking available</li>
-                    <li>• Bus stop (10 min walk)</li>
-                    <li>• Airport (1.5 hours)</li>
+                    <li>• Parking available</li>
+                    <li>• Airport (2 hours)</li>
                   </ul>
                 </div>
               </div>
 
-              <Link
-                to="/contact"
+              <a
+                href="https://maps.app.goo.gl/X4JUPR5LeuiSxxFt8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center bg-forest-600 hover:bg-forest-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
               >
                 Get Directions
                 <ArrowRight className="ml-2" size={18} />
-              </Link>
+              </a>
             </div>
 
             <div className="animate-slide-in-right">
-              <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center shadow-lg">
-                <div className="text-center text-gray-500">
-                  <MapPin size={48} className="mx-auto mb-4" />
-                  <p className="text-lg">Interactive Map</p>
-                  <p className="text-sm">Coming Soon</p>
+              <a
+                href="https://maps.app.goo.gl/X4JUPR5LeuiSxxFt8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="text-center text-gray-500">
+                    <MapPin size={48} className="mx-auto mb-4" />
+                    <p className="text-lg">Interactive Map</p>
+                    <p className="text-sm">Click to open in Google Maps</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -302,14 +311,16 @@ const About = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Join thousands of satisfied guests who have made unforgettable memories at Camping Principata.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/355683204350"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center bg-white text-earth-600 hover:bg-gray-100 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 animate-scale-in"
             style={{ animationDelay: '0.4s' }}
           >
             Book Your Adventure
             <ArrowRight className="ml-2" size={20} />
-          </Link>
+          </a>
         </div>
       </section>
     </div>
