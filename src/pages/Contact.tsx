@@ -1,5 +1,5 @@
+
 import { MapPin, Phone, MessageCircle } from 'lucide-react';
-import Map from '../components/Map';
 
 const ContactPage = () => {
   const contactInfo = [
@@ -135,9 +135,25 @@ const ContactPage = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            {/* Interactive Map */}
+            {/* Map Placeholder */}
             <div className="lg:col-span-2">
-              <Map height="h-96 lg:h-[500px]" className="animate-scale-in" />
+              <a
+                href="https://maps.app.goo.gl/X4JUPR5LeuiSxxFt8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <div className="bg-gray-200 rounded-2xl h-96 lg:h-[500px] flex items-center justify-center shadow-lg animate-scale-in hover:shadow-xl transition-shadow duration-300">
+                  <div className="text-center text-gray-500">
+                    <MapPin size={64} className="mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">Interactive Map</h3>
+                    <p className="text-sm">
+                      Click to open in Google Maps<br />
+                      GPS Coordinates: 45.4642° N, 9.1900° E
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
 
             {/* Directions */}
@@ -180,7 +196,7 @@ const ContactPage = () => {
                   rel="noopener noreferrer"
                   className="w-full mt-6 bg-earth-500 hover:bg-earth-600 text-white py-3 px-4 rounded-lg font-medium transition-colors duration-200 block text-center"
                 >
-                  Open in Google Maps
+                  Get Directions
                 </a>
               </div>
             </div>
