@@ -1,4 +1,4 @@
-import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote } from 'lucide-react';
+import { Tent, ParkingMeter, User, Baby, Droplets, Shirt, Umbrella, Flame, Ship, Caravan, CreditCard, Banknote, Plug, Sailboat, Triangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Pricing = () => {
@@ -144,7 +144,7 @@ const Pricing = () => {
 
   const servicePrices = [
     {
-      icon: Droplets,
+      icon: Plug,
       title: 'Electricity',
       price: '€3',
       period: 'per day',
@@ -172,7 +172,7 @@ const Pricing = () => {
       description: 'Day access to our beautiful beach area'
     },
     {
-      icon: Ship,
+      icon: Sailboat,
       title: 'Rowboat rental',
       price: '€10',
       period: 'per hour',
@@ -200,7 +200,7 @@ const Pricing = () => {
       description: 'Max 6 persons - Contact for pricing'
     },
     {
-      icon: Ship,
+      icon: Triangle,
       title: 'Boat Ramp',
       price: '€10',
       period: 'per use',
