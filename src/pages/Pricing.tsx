@@ -78,7 +78,7 @@ const Pricing = () => {
         'Weather-resistant'
       ],
       popular: false,
-      images: ['img/tent2-1.jpg', 'img/tent2-2.jpg']
+      images: ['/img/tents-lakeside.jpg', '/img/tent-interior.jpg']
     },
     {
       icon: Tent,
@@ -93,7 +93,7 @@ const Pricing = () => {
         'Extra space for comfort'
       ],
       popular: false,
-      images: ['img/tent4-1.jpg', 'img/tent4-2.jpg']
+      images: ['/img/tents-lakeside.jpg', '/img/tent-interior.jpg']
     },
     {
       icon: Caravan,
@@ -108,7 +108,7 @@ const Pricing = () => {
         'Comfortable sleeping area'
       ],
       popular: false,
-      images: ['img/caravan2-1.jpg', 'img/caravan2-2.jpg']
+      images: ['/img/caravan-exterior.jpg', '/img/caravan-interior.jpg']
     },
     {
       icon: Caravan,
@@ -123,7 +123,7 @@ const Pricing = () => {
         'Multiple sleeping areas'
       ],
       popular: true,
-      images: ['img/caravan5-1.jpg', 'img/caravan5-2.jpg']
+      images: ['/img/caravan-family.jpg', '/img/caravan-exterior.jpg']
     },
     {
       icon: Ship,
@@ -138,7 +138,7 @@ const Pricing = () => {
         'Unique camping experience'
       ],
       popular: false,
-      images: ['img/boat2-1.jpg', 'img/boat2-2.jpg']
+      images: ['/img/boat-accommodation.jpg', '/img/tents-lakeside.jpg']
     }
   ];
 
