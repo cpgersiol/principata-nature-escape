@@ -63,12 +63,12 @@ const ContactPage = () => {
       {/* Contact Information */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold text-forest-800 mb-12 text-center">
               Contact Information
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <div className="space-y-4 mb-8">
               {contactInfo.map((info, index) => (
                 <div
                   key={index}
@@ -80,25 +80,25 @@ const ContactPage = () => {
                       href={info.link}
                       target={info.isExternal ? "_blank" : undefined}
                       rel={info.isExternal ? "noopener noreferrer" : undefined}
-                      className="flex items-start space-x-4 p-6 bg-sage-50 rounded-2xl hover:bg-sage-100 transition-colors duration-200 cursor-pointer block"
+                      className="flex items-center space-x-4 p-6 bg-sage-50 rounded-2xl hover:bg-sage-100 transition-colors duration-200 cursor-pointer w-full"
                     >
-                      <div className="text-2xl">{info.icon}</div>
-                      <div>
-                        <h3 className="font-semibold text-forest-800 mb-2">{info.title}</h3>
+                      <div className="text-2xl flex-shrink-0">{info.icon}</div>
+                      <div className="flex-grow">
+                        <h3 className="font-semibold text-forest-800 mb-1">{info.title}</h3>
                         {info.details.map((detail, detailIndex) => (
-                          <p key={detailIndex} className="text-gray-600">
+                          <p key={detailIndex} className="text-gray-600 text-sm">
                             {detail}
                           </p>
                         ))}
                       </div>
                     </a>
                   ) : (
-                    <div className="flex items-start space-x-4 p-6 bg-sage-50 rounded-2xl">
-                      <div className="text-2xl">{info.icon}</div>
-                      <div>
-                        <h3 className="font-semibold text-forest-800 mb-2">{info.title}</h3>
+                    <div className="flex items-center space-x-4 p-6 bg-sage-50 rounded-2xl w-full">
+                      <div className="text-2xl flex-shrink-0">{info.icon}</div>
+                      <div className="flex-grow">
+                        <h3 className="font-semibold text-forest-800 mb-1">{info.title}</h3>
                         {info.details.map((detail, detailIndex) => (
-                          <p key={detailIndex} className="text-gray-600">
+                          <p key={detailIndex} className="text-gray-600 text-sm">
                             {detail}
                           </p>
                         ))}
